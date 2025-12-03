@@ -1,3 +1,17 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen" />
+  <img src="https://img.shields.io/badge/version-1.0-blue" />
+  <img src="https://img.shields.io/badge/type-research%20paper-purple" />
+  <img src="https://img.shields.io/badge/semantic%20AI-FOS0-orange" />
+  <img src="https://img.shields.io/badge/license-MIT-yellow" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/make-nio/foundations-of-meaning-fos0?style=social" />
+  <img src="https://img.shields.io/github/forks/make-nio/foundations-of-meaning-fos0?style=social" />
+</p>
+
+
 # 📘 FOS-0 — Fundamento Ontológico del Significado  
 ### Propuesta técnica para corregir el bug ontológico de los modelos de lenguaje
 
