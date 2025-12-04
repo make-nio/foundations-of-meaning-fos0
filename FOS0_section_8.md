@@ -1,264 +1,264 @@
-# 8. Arquitectura Unificada para Integrar FOS-0 en Modelos de Lenguaje
-(La capa que convierte lenguaje estadístico en significado humano interoperable)
+# 8. Unified Architecture to Integrate FOS-0 into Language Models
+(The layer that turns statistical language into human-interoperable meaning)
 
-Los modelos de lenguaje actuales operan sobre correlaciones estadísticas y patrones textuales.
-Funcionan extremadamente bien dentro de ese marco, pero ignoran algo que para los humanos es ineludible:
-el tipo de significado desde el cual interpretamos conceptos esenciales, experienciales y formativos.
+Current language models operate on statistical correlations and textual patterns.  
+They perform extremely well within that frame, but they ignore something humans cannot ignore:  
+the **type of meaning** through which we interpret essential, experiential, and formative concepts.
 
-Integrar FOS-0 no requiere rediseñar un LLM.
-Requiere agregar una capa cognitiva externa capaz de clasificar, estructurar, validar y corregir significado antes y después del decodificador.
+Integrating FOS-0 does **not** require redesigning an LLM.  
+It requires adding an external cognitive layer capable of classifying, structuring, validating, and correcting meaning **before and after** the decoder.
 
-Esa capa es la **FOS-0 Compatibility Layer (FCL)**:
-un middleware semántico que garantiza que el modelo produzca respuestas compatibles con la ontología humana, evitando reduccionismos, relativismos impropios y definiciones que destruyen estructuras cognitivas formativas.
+That layer is the **FOS-0 Compatibility Layer (FCL)**:  
+a semantic middleware that ensures the model produces responses compatible with human ontology, preventing reductionism, improper relativism, and definitions that erode formative cognitive structures.
 
-La FCL opera en cuatro momentos:
+The FCL operates in four stages:
 
-1. **Clasifica** el concepto.
-2. **Selecciona** el registro semántico adecuado.
-3. **Reensambla** la respuesta en forma ontológicamente válida.
-4. **Filtra** deformaciones cognitivas antes del output.
-
----
-
-## 8.1. Objetivo operativo de la FCL
-
-Un LLM detecta intención, estilo y complejidad; pero no detecta el tipo ontológico del concepto.
-Ese vacío produce:
-
-- definiciones esenciales convertidas en tecnicismos,
-- marcos universitarios aplicados a conceptos de base humana,
-- relativismo automático donde no corresponde,
-- pérdida de teleología,
-- confusión entre descripción y definición,
-- fragmentación del registro lingüístico.
-
-La FCL corrige ese vacío proporcionando un protocolo ontológico previo a la generación y un validador posterior.
-
-El modelo sigue siendo el mismo.
-Lo que cambia es la interfaz cognitiva entre humano y sistema.
+1. **Classifies** the concept.  
+2. **Selects** the appropriate semantic register.  
+3. **Reassembles** the output into an ontologically valid form.  
+4. **Filters** cognitive distortions before the final output.
 
 ---
 
-## 8.2. Módulo COC — Clasificación Ontológica del Concepto
+## 8.1. Operational Objective of the FCL
 
-Antes de generar texto, el sistema determina qué tipo de concepto está en juego.
+An LLM detects intent, style, and complexity — but it does **not** detect the ontological type of a concept.  
+This gap produces:
 
-**Tipos operativos:**
+- essential concepts turned into technicisms,  
+- academic frames applied to human-base concepts,  
+- automatic relativism where it does not belong,  
+- loss of teleology,  
+- confusion between description and definition,  
+- fragmentation of linguistic register.
 
-- Esencial
-- Relacional
-- Experiencial
-- Teleológico
-- Funcional / Instrumental
-- Institucional / Académico
-- Técnico
-- Existencial / Afectivo
+The FCL fixes this gap by providing an ontological protocol prior to generation and a validator afterward.
 
-La categoría define qué tipo de respuesta es válida.
-Los modelos actuales no discriminan esto: origen directo del bug.
-
-El COC requiere datasets pequeños pero bien curados:
-no hace falta ontología total, solo tipología útil.
+The model itself does not change.  
+What changes is the **cognitive interface** between the human and the system.
 
 ---
 
-## 8.3. Módulo SRS — Selección de Registro Semántico
+## 8.2. COC Module — Ontological Classification of the Concept
 
-Una vez identificado el tipo, el sistema elige cómo debe explicarse el concepto.
+Before generating text, the system determines **what type of concept** is present.
 
-**Reglas operativas:**
+**Operational types:**
 
-- **Esenciales →** dar núcleo definitorio, no descripción.
-- **Relacionales →** deben mapear experiencia humana compartida.
-- **Funcionales →** evitar teleología accidental.
-- **Institucionales →** evitar esencialización académica.
-- **Teleológicos →** explicitar propósito humano mínimo.
-- **Experienciales →** reconocer la carga afectiva estructural.
+- Essential  
+- Relational  
+- Experiential  
+- Teleological  
+- Functional / Instrumental  
+- Institutional / Academic  
+- Technical  
+- Existential / Affective  
 
-Hoy los modelos eligen registro por asociación estadística;
-el SRS lo hace por criterios cognitivos.
+The category determines what type of response is valid.  
+Current models do not differentiate these: the direct origin of the bug.
 
----
-
-## 8.4. Módulo MTI — Teleología Implícita
-
-Muchos conceptos tienen propósito humano estructural:
-educar, ayudar, gobernar, formar, reparar, sanar, cooperar.
-
-El MTI garantiza que, cuando el concepto lo requiera, el modelo preserve el propósito mínimo humano sin imponer valores externos.
-
-Ejemplo:
-“educar” no es “transmitir información”, sino acompañar la formación de la persona.
-Esto no es moralidad: es coherencia semántica.
+The COC requires small but well-curated datasets —  
+not a full ontology, just a useful typology.
 
 ---
 
-## 8.5. Guardrails Cognitivos — Niñocidad Semántica (GNC)
+## 8.3. SRS Module — Semantic Register Selection
 
-La FCL protege conceptos formativos esenciales para usuarios sin base conceptual todavía formada (niños, adolescentes, adultos sin formación filosófica).
+Once the type is identified, the system chooses **how** the concept must be expressed.
 
-Evita:
+**Operational rules:**
 
-- relativismo aplicado a conceptos fundacionales,
-- definiciones que destruyen sentido básico de verdad, justicia o bien,
-- marcos académicos usados como definiciones base,
-- tecnicismos aplicados a conceptos existenciales.
+- **Essential →** provide definitional core, not description.  
+- **Relational →** map shared human experience.  
+- **Functional →** avoid accidental teleology.  
+- **Institutional →** avoid academic essentialization.  
+- **Teleological →** preserve minimum human purpose.  
+- **Experiential →** acknowledge structural affective content.
 
-Es safety by design semántico.
-
----
-
-## 8.6. Módulo ROR — Reensamblado Ontológico de la Respuesta
-
-El LLM produce texto.
-El ROR lo corrige semánticamente para que sea compatible con la ontología humana.
-
-Corrige:
-
-- reduccionismos,
-- desplazamientos institucionales,
-- neutralidad mal aplicada,
-- tecnicismos impropios,
-- pérdida de propósito,
-- confusión entre esencia y función.
-
-No modifica hechos.
-Modifica estructura semántica.
+Today’s models choose register statistically;  
+the SRS chooses it cognitively.
 
 ---
 
-## 8.7. Módulo FDC — Filtro de Deformación Cognitiva
+## 8.4. MTI Module — Implicit Teleology
 
-Chequea que la respuesta final:
+Many concepts contain structural human purpose:  
+educate, help, govern, form, repair, heal, cooperate.
 
-- no contradiga FOS-0,
-- no destruya conceptos formativos,
-- no mezcle registros incompatibles,
-- no induzca anomia conceptual,
-- preserve estabilidad de significado.
+The MTI ensures that, when necessary, the model preserves the minimal human purpose without imposing external values.
 
-Si falla, el FDC fuerza regeneración bajo nuevas restricciones.
-
-Funciona como un firewall ontológico.
+Example:  
+“to educate” is not “to transmit information,” but **to accompany the formation of a person**.  
+This is not morality — it is semantic coherence.
 
 ---
 
-## 8.8. Pipeline completo de interacción
+## 8.5. Cognitive Guardrails — Semantic Child-Safety (GNC)
 
-```
-USER INPUT
-   ↓
-COC — Clasificación Ontológica
-   ↓
-SRS — Selección de Registro Semántico
-   ↓
-MTI — Teleología (si corresponde)
-   ↓
-LLM — Decodificador estándar
-   ↓
-ROR — Reensamblado Ontológico
-   ↓
-FDC — Filtro de Deformación Cognitiva
-   ↓
-OUTPUT — Respuesta ontológicamente válida
-```
+The FCL protects formative concepts for users whose conceptual structures are still developing (children, adolescents, adults without philosophical grounding).
 
-La arquitectura del modelo no cambia.
-La FCL actúa como wrapper cognitivo modular.
+It prevents:
+
+- relativism applied to foundational concepts,  
+- definitions that erode basic ideas of truth, justice, or good,  
+- academic frames used as base definitions,  
+- technicisms applied to existential concepts.
+
+This is **semantic safety by design**.
 
 ---
 
-## 8.9. Requisitos de entrenamiento
+## 8.6. ROR Module — Ontological Reassembly of the Response
 
-### 1. Dataset anotado por tipo ontológico
+The LLM produces text.  
+The ROR semantically restructures it so the response becomes compatible with human ontology.
 
-Cada entrada debe incluir categoría, registro y nivel operativo.
-Hoy está todo mezclado.
+It corrects:
 
-### 2. Dataset de definiciones esenciales
+- reductionism,  
+- institutional displacement,  
+- misapplied neutrality,  
+- improper technicisms,  
+- loss of purpose,  
+- confusion between essence and function.
 
-No académicas.
-No relativistas.
-No institucionales.
-Usadas por humanos reales.
-
-Ejemplos:
-verdad, justicia, muerte, familia, propósito, bien.
-
-### 3. Penalización de incompatibilidades
-
-Penalizar:
-
-- funcionalización de conceptos esenciales,
-- relativización de conceptos formativos,
-- institucionalización de experiencias humanas,
-- tecnicismos sobre conceptos existenciales.
-
-No es sesgo.
-Es coherencia cognitiva.
+It does not modify factual content.  
+It modifies **semantic structure**.
 
 ---
 
-## 8.10. Métricas para validar FOS-0
+## 8.7. FDC Module — Cognitive Distortion Filter
 
-### EDT — Essential Definition Test
-Evalúa preservación de núcleo definitorio y teleología.
+The FDC verifies that the final response:
 
-### OCT — Ontological Coherence Test
-Evalúa consistencia entre categoría y respuesta.
+- does not contradict FOS-0,  
+- does not erode formative concepts,  
+- does not mix incompatible registers,  
+- does not induce conceptual anomie,  
+- preserves meaning stability.
 
-### FSI — Formative Safety Index
-Simula interacción con usuarios formativos.
+If the check fails, the FDC forces regeneration under new constraints.
 
-Estas métricas miden significado, no solo precisión factual.
-
----
-
-## 8.11. Roadmap Técnico de Implementación
-
-### Fase 1 — Fundaciones ontológicas mínimas
-- Introducir tipología conceptual (COC).
-- Crear dataset esencial FOS-0.
-- Construir librería interna de definiciones esenciales.
-
-### Fase 2 — Integración modular como wrapper
-- Implementar SRS, MTI, ROR, FDC.
-- Integrar guardrails cognitivos (GNC).
-- Convertir FCL en middleware externo plug-and-play.
-
-### Fase 3 — Optimización y entrenamiento avanzado
-- Integrar criterios ontológicos en RLHF (FOS-RLHF).
-- Añadir FOS-Scores a benchmarks.
-- Versionar semánticamente el modelo y detectar regresiones.
+It functions as an **ontological firewall**.
 
 ---
 
-## 8.12. Gobernanza Semántica
+## 8.8. Full Interaction Pipeline
 
-Para evitar regresiones:
+    USER INPUT
+       ↓
+    COC — Ontological Classification
+       ↓
+    SRS — Semantic Register Selection
+       ↓
+    MTI — Teleology (if applicable)
+       ↓
+    LLM — Standard Decoder
+       ↓
+    ROR — Ontological Reassembly
+       ↓
+    FDC — Cognitive Distortion Filter
+       ↓
+    OUTPUT — Ontologically Valid Response
 
-- lista estable de conceptos esenciales,
-- auditoría cognitiva por versión,
-- control de estabilidad de significado,
-- alertas ontológicas cuando una actualización degrade definiciones.
-
-Es un control de coherencia, no un control moral.
+The underlying model does not change.  
+The FCL acts as a modular cognitive wrapper.
 
 ---
 
-## 8.13. Síntesis final de la Sección
+## 8.9. Training Requirements
 
-La FOS-0 Compatibility Layer:
+### 1. Dataset annotated by ontological type
 
-- clasifica significado,
-- selecciona el registro correcto,
-- preserva teleología humana,
-- reensambla la respuesta ontológicamente,
-- filtra deformaciones cognitivas,
-- evita daño formativo,
-- proporciona interoperabilidad cognitiva entre IA y humanos.
+Each entry must include category, register, and operational level.  
+Today everything is mixed.
 
-No cambia el motor.
-Cambia la interfaz ontológica.
+### 2. Dataset of essential definitions
 
-FOS-0 permite que un modelo estadístico converse como un interlocutor humano compatible, sin aplanar el significado ni erosionar estructuras cognitivas esenciales.
+Not academic.  
+Not relativistic.  
+Not institutional.  
+Used by real humans.
+
+Examples: truth, justice, death, family, purpose, good.
+
+### 3. Incompatibility penalties
+
+Penalize:
+
+- functionalization of essential concepts,  
+- relativization of formative concepts,  
+- institutionalization of human experiences,  
+- technicisms on existential concepts.
+
+This is not bias.  
+It is cognitive coherence.
+
+---
+
+## 8.10. Metrics to Validate FOS-0
+
+### EDT — Essential Definition Test  
+Assesses preservation of definitional core and teleology.
+
+### OCT — Ontological Coherence Test  
+Assesses consistency between concept type and response.
+
+### FSI — Formative Safety Index  
+Simulates interaction with formative users.
+
+These metrics measure **meaning**, not just factual accuracy.
+
+---
+
+## 8.11. Technical Implementation Roadmap
+
+### Phase 1 — Minimal Ontological Foundations
+
+- Introduce conceptual typology (COC).  
+- Build essential FOS-0 dataset.  
+- Create internal library of essential definitions.
+
+### Phase 2 — Modular Integration as Wrapper
+
+- Implement SRS, MTI, ROR, FDC.  
+- Integrate cognitive guardrails (GNC).  
+- Convert the FCL into external plug-and-play middleware.
+
+### Phase 3 — Optimization and Advanced Training
+
+- Integrate ontological criteria into RLHF (FOS-RLHF).  
+- Add FOS-Scores to benchmarks.  
+- Semantic versioning with regression detection.
+
+---
+
+## 8.12. Semantic Governance
+
+To prevent regressions:
+
+- stable list of essential concepts,  
+- per-version cognitive audits,  
+- meaning stability checks,  
+- ontological alerts when updates degrade definitions.
+
+This is coherence control, not moral control.
+
+---
+
+## 8.13. Final Synthesis of the Section
+
+The FOS-0 Compatibility Layer:
+
+- classifies meaning,  
+- selects the correct semantic register,  
+- preserves human teleology,  
+- reassembles the response ontologically,  
+- filters cognitive distortions,  
+- protects formative structures,  
+- enables cognitive interoperability between AI and humans.
+
+It does not change the engine.  
+It changes the **ontological interface**.
+
+FOS-0 enables a statistical model to converse like a human-compatible interlocutor, without flattening meaning or eroding essential cognitive structures.

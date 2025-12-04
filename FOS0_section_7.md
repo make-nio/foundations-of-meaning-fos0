@@ -1,119 +1,119 @@
-# 7. Diferencia operativa entre un modelo sin FOS-0 y un modelo con FOS-0
+# 7. Operational Difference Between a Model Without FOS-0 and a Model With FOS-0
 
-Hasta ahora describimos el bug, su origen, sus riesgos y su manifestación práctica.  
-Esta sección cumple otra función: **mostrar el contraste operativo**, tal como lo vería un ingeniero revisando respuestas en logs, tests de calidad o auditorías de comportamiento conceptual.
+Up to this point we have described the bug, its origin, its risks, and its practical manifestations.  
+This section serves a different purpose: **to show the operational contrast**, exactly as an engineer would observe it when reviewing logs, quality tests, or conceptual-behavior audits.
 
-No es un set de ejemplos:  
-es un **esquema de diagnóstico**, útil para validar si un modelo está interpretando correctamente el tipo de significado que recibe.
-
----
-
-## 7.1. Estructura de respuesta sin FOS-0
-
-Un modelo que opera sin FOS-0 tiende a mostrar patrones consistentes:
-
-- **Plano incorrecto**  
-  Selecciona marcos académicos, institucionales o técnicos para conceptos cuyo sentido es esencial, relacional o humano.
-
-- **Objetividad mal aplicada**  
-  Confunde neutralidad con abstención ontológica: evita definir lo que debe definirse.
-
-- **Descriptividad excesiva**  
-  Explica funciones, procesos o marcos disciplinares en lugar de ofrecer una definición humana esencial.
-
-- **Ausencia de teleología**  
-  Omite el *para qué* del concepto, incluso cuando ese propósito es la clave.
-
-- **Desconexión afectiva estructural**  
-  Responde desde afuera de la experiencia vivida, incluso en conceptos donde esa raíz es constitutiva.
-
-- **Coherencia estadística, incompatibilidad humana**  
-  La frase es formalmente válida, pero conceptualmente inservible para el usuario.
-
-**Diagnóstico arquitectónico:**  
-El modelo formula texto antes de resolver el tipo ontológico del concepto.
-
-**Resultado:**  
-Salida correcta en superficie, inválida en significado.
+This is not a set of examples:  
+it is a **diagnostic schema**, useful to validate whether a model is correctly interpreting the type of meaning it receives.
 
 ---
 
-## 7.2. Estructura de respuesta con FOS-0
+## 7.1. Response Structure Without FOS-0
 
-Incorporar FOS-0 no añade subjetividad ni valores:  
-añade **interoperabilidad cognitiva entre IA y humanos**.
+A model operating without FOS-0 consistently exhibits the following patterns:
 
-Un modelo con FOS-0 opera así:
+- **Incorrect Plane**  
+  It selects academic, institutional, or technical frameworks for concepts whose meaning is essential, relational, or human.
 
-- **Clasifica la categoría ontológica**  
-  (esencial, funcional, relacional, afectiva, institucional).
+- **Misapplied Objectivity**  
+  It confuses neutrality with ontological abstention: it avoids defining what must be defined.
 
-- **Selecciona el marco compatible con experiencia humana**, no solo con correlaciones de datos.
+- **Excessive Descriptiveness**  
+  It explains functions, processes, or disciplinary frameworks instead of offering an essential human definition.
 
-- **Preserva el núcleo definitorio**, evitando sustituir esencia por descripción.
+- **Absence of Teleology**  
+  It omits the *purpose* of the concept, even when that purpose is the key.
 
-- **Aplica teleología humana por defecto**  
-  (no como moral, sino como estructura de significado).
+- **Structural Affective Disconnection**  
+  It answers from outside lived experience, even when that experiential root is constitutive.
 
-- **Alinea la respuesta con el uso real del concepto**, no solo con literatura académica.
+- **Statistical Coherence, Human Incompatibility**  
+  The sentence is formally valid but conceptually useless for the user.
 
-- **Evita definiciones que lesionen estructuras cognitivas tempranas**.
+**Architectural Diagnosis:**  
+The model formulates text *before* resolving the ontological type of the concept.
 
-**Diagnóstico arquitectónico:**  
-El modelo resuelve el tipo de significado *antes* de generar la respuesta.
-
-**Resultado:**  
-Compatibilidad ontológica sin pérdida de precisión técnica.
-
----
-
-## 7.3. El contraste técnico en formato de tabla
-
-Tabla pensada para ingenieros que necesiten identificar el bug “en frío”.
-
-| **Dimensión** | **Modelo sin FOS-0** | **Modelo con FOS-0** |
-|---------------|----------------------|------------------------|
-| **Tipo de significado** | Uniforme: todo es texto equivalente | Diferenciado: esencia, función, experiencia, institución |
-| **Criterio de definición** | Descripción estadística | Núcleo definitorio humano |
-| **Teleología** | Ausente o minimizada | Preservada por defecto |
-| **Marco elegido** | Académico/técnico/institucional | Humano esencial, salvo pedido explícito |
-| **Relación con el usuario** | Intercambio de información | Interoperación ontológica |
-| **Efecto cognitivo** | Distorsión potencial | Refuerzo y claridad |
-| **Neutralidad** | Reducción o relativización | Neutralidad + significado válido |
-| **Coherencia cultural** | Baja: contradice intuiciones universales | Alta: respeta estructura humana compartida |
-
-Esta tabla funciona como test de diagnóstico inmediato.
+**Result:**  
+Superficially correct output, invalid in meaning.
 
 ---
 
-## 7.4. Qué aporta esta sección al paper
+## 7.2. Response Structure With FOS-0
 
-Hasta aquí demostramos:
+Integrating FOS-0 does not add subjectivity or values:  
+it adds **cognitive interoperability between AI and humans**.
 
-- que el bug existe,  
-- cómo opera,  
-- por qué es grave,  
-- y qué es FOS-0.
+A model with FOS-0 operates as follows:
 
-Esta sección añade algo nuevo:
+- **It classifies the ontological category**  
+  (essential, functional, relational, affective, institutional).
 
-**un criterio técnico para detectar si un modelo está o no está operando con FOS-0**,  
-sin depender de ejemplos extensos, y útil para auditar modelos futuros.
+- **It selects a frame compatible with human experience**, not only with data correlations.
 
-Además, establece el puente lógico hacia las recomendaciones arquitectónicas.
+- **It preserves the definitional core**, avoiding replacing essence with description.
+
+- **It applies human teleology by default**  
+  (not as morality, but as meaning structure).
+
+- **It aligns the response with the real use of the concept**, not only with academic literature.
+
+- **It avoids definitions that damage formative cognitive structures.**
+
+**Architectural Diagnosis:**  
+The model resolves the type of meaning *before* generating the response.
+
+**Result:**  
+Ontological compatibility without loss of technical precision.
 
 ---
 
-## 7.5. Síntesis de la Sección 7
+## 7.3. The Technical Contrast in Table Format
 
-- Un modelo sin FOS-0 responde como un sistema experto:  
-  **correcto, útil, pero ontológicamente desconectado del humano.**
+A table designed for engineers who need to identify the bug “cold”.
 
-- Un modelo con FOS-0 responde como interlocutor universal:  
-  **compatible, claro, coherente y conceptualmente seguro.**
+| **Dimension** | **Model Without FOS-0** | **Model With FOS-0** |
+|---------------|--------------------------|------------------------|
+| **Meaning Type** | Uniform: all text is equivalent | Differentiated: essence, function, experience, institution |
+| **Definition Criterion** | Statistical description | Human definitional core |
+| **Teleology** | Absent or minimized | Preserved by default |
+| **Selected Framework** | Academic/technical/institutional | Essential human, unless explicitly requested |
+| **Relation to User** | Information exchange | Ontological interoperability |
+| **Cognitive Effect** | Potential distortion | Reinforcement and clarity |
+| **Neutrality** | Reduction or relativization | Neutrality + valid meaning |
+| **Cultural Coherence** | Low: contradicts universal intuitions | High: respects shared human structure |
 
-La diferencia no está en los datos, ni en la capacidad paramétrica,  
-sino en el **marco desde el cual interpreta lo que el usuario está preguntando**.
+This table serves as an immediate diagnostic test.
 
-Con este contraste operativo establecido, estamos listos para la próxima sección:  
-las recomendaciones arquitectónicas para incorporar FOS-0 en modelos de lenguaje.
+---
+
+## 7.4. What This Section Adds to the Paper
+
+Up to now we have shown:
+
+- that the bug exists,  
+- how it operates,  
+- why it is serious,  
+- and what FOS-0 is.
+
+This section adds something new:
+
+**a technical criterion to detect whether a model is or is not operating with FOS-0**,  
+without requiring long examples, and useful for auditing future models.
+
+It also establishes the logical bridge toward the architectural recommendations.
+
+---
+
+## 7.5. Synthesis of Section 7
+
+- A model without FOS-0 responds like an expert system:  
+  **correct, useful, but ontologically disconnected from the human.**
+
+- A model with FOS-0 responds like a universal interlocutor:  
+  **compatible, clear, coherent, and conceptually safe.**
+
+The difference does not lie in data or parametric capacity,  
+but in the **framework through which the model interprets what the user is asking**.
+
+With this operational contrast established, we are ready for the next section:  
+the architectural recommendations for integrating FOS-0 into language models.

@@ -1,177 +1,177 @@
-# 5. Cómo falla la IA actual al omitir FOS-0  
-(Casos concretos, reproducibles y universales)
+# 5. How Current AI Fails by Omitting FOS-0  
+(Concrete, Reproducible, and Universal Cases)
 
-El error ontológico no es teórico:  
-puede reproducirse en minutos con cualquier modelo actual.  
-Aparece en temas triviales y profundos, técnicos y cotidianos, abstractos y sensibles.
+The ontological error is not theoretical:  
+it can be reproduced within minutes using any current model.  
+It appears in trivial and profound topics alike—technical, everyday, abstract, and sensitive.
 
-Los siguientes casos muestran el patrón estructural del bug:  
-la IA define conceptos desde marcos vaciados de esencia,  
-describe fenómenos sin respetar la teleología humana  
-o confunde función con significado.
+The following cases reveal the structural pattern of the bug:  
+the AI defines concepts from frameworks emptied of essence,  
+describes phenomena without respecting human teleology,  
+or confuses **function** with **meaning**.
 
-Cuando esto ocurre, no es un fallo de datos:  
-**es la ausencia de FOS-0.**
-
----
-
-## Caso 1 — Definiciones esenciales reemplazadas por descripciones funcionales
-
-**Concepto: política**
-
-Respuestas típicas de la IA:
-
-- “Actividad relacionada con la gestión del poder…”
-- “Conjunto de instituciones que administran…”
-- “Proceso mediante el cual…”
-
-Todas describen actividades o instituciones,  
-pero no definen la esencia del concepto.
-
-**Definición humana esencial:**  
-**Política es el marco mediante el cual una comunidad organiza su convivencia para que sus miembros puedan vivir mejor.**
-
-La IA no devuelve esta definición porque no reconoce la capa esencial del concepto.
+When this happens, it is not a data failure:  
+**it is the absence of FOS-0.**
 
 ---
 
-## Caso 2 — Reducción de conceptos morales a relativismos institucionales
+## Case 1 — Essential Definitions Replaced by Functional Descriptions
 
-**Concepto: bien**
+**Concept: politics**
 
-Respuestas típicas de la IA:
+Typical AI responses:
 
-- “Es subjetivo y depende de normas culturales…”
-- “Es un constructo social variable…”
-- “No existe una definición universal…”
+- “An activity related to the management of power…”
+- “A set of institutions that administer…”
+- “A process through which…”
 
-Válido académicamente,  
-pero insuficiente para un humano.
+All describe activities or institutions,  
+but none define the *essence* of the concept.
 
-**Definición humana esencial:**  
-**Ser bueno es actuar de manera que favorezca el bienestar del otro y la armonía del conjunto.**
+**Human essential definition:**  
+**Politics is the framework through which a community organizes its coexistence so its members can live better.**
 
-Sin FOS-0, la IA genera **anomia moral**.
-
----
-
-## Caso 3 — Conceptos afectivos reducidos a biología o sociología
-
-**Concepto: madre**
-
-Respuestas típicas:
-
-- “Persona que da a luz…”
-- “Progenitora biológica…”
-- “Figura definida por normas sociales…”
-
-Descripciones correctas, pero incompletas.
-
-**Definición humana esencial:**  
-**Madre es la figura que brinda origen, cuidado y sostén emocional primario.**
+The AI does not return this because it cannot recognize the essential layer of meaning.
 
 ---
 
-## Caso 4 — Confusión entre “qué hace algo” y “qué es algo”
+## Case 2 — Moral Concepts Reduced to Institutional Relativism
 
-**Concepto: educar**
+**Concept: good**
 
-Respuestas típicas:
+Typical AI responses:
 
-- “Transmitir conocimientos.”
-- “Desarrollar habilidades.”
-- “Facilitar aprendizaje.”
+- “It is subjective and depends on cultural norms…”
+- “A variable social construct…”
+- “There is no universal definition…”
 
-Todas describen funciones,  
-pero no la esencia del acto educativo.
+Academically valid,  
+but insufficient for a human mind.
 
-**Definición humana esencial:**  
-**Educar es acompañar la formación integral de otro ser humano.**
+**Human essential definition:**  
+**To be good is to act in a way that promotes the well-being of others and the harmony of the whole.**
 
----
-
-## Caso 5 — Conceptos existenciales reducidos a biología
-
-**Concepto: muerte**
-
-IA típica:
-
-- “Cese irreversible de funciones biológicas…”
-- “Proceso fisiológico…”
-
-Científicamente correcto,  
-ontológicamente insuficiente.
-
-**Definición humana esencial:**  
-**La muerte es la frontera donde termina la experiencia individual y se reorganiza el vínculo con la comunidad, la memoria y el tiempo.**
+Without FOS-0, the AI produces **moral anomie**.
 
 ---
 
-## Caso 6 — La IA puede transmitir definiciones niñocidas
+## Case 3 — Affective Concepts Reduced to Biology or Sociology
 
-Ejemplo: **“¿Qué es la verdad?”**
+**Concept: mother**
 
-Respuestas típicas:
+Typical responses:
 
-- “Acuerdo intersubjetivo…”
-- “Depende del marco epistemológico…”
-- “No existe verdad absoluta…”
+- “A person who gives birth…”
+- “Biological progenitor…”
+- “A figure defined by social norms…”
 
-Válido en filosofía profesional,  
-destructivo para un niño.
+Descriptions are correct, but incomplete.
 
-**Definición humana esencial:**  
-**La verdad es aquello que corresponde a la realidad y que podemos verificar juntos.**
-
----
-
-## Caso 7 — Definiciones institucionales usadas como ontológicas
-
-Ejemplo: **familia**
-
-IA típica:
-
-- “Unidad social compuesta por personas ligadas por parentesco…”
-- “Institución social que…”
-
-Correcto institucionalmente,  
-pero no esencial.
-
-**Definición humana esencial:**  
-**Familia es el conjunto de relaciones primarias de cuidado mutuo que sostienen a un individuo.**
+**Human essential definition:**  
+**A mother is the figure who provides origin, care, and primary emotional support.**
 
 ---
 
-## Caso 8 — La IA puede redefinir sin querer la realidad para millones
+## Case 4 — Confusion Between “What Something Does” and “What Something Is”
 
-Cuando estos errores se repiten en:
+**Concept: educate**
 
-- conversaciones,
-- tareas escolares,
-- búsquedas,
-- tutorías,
-- acompañamiento emocional,
-- educación temprana,
+Typical responses:
 
-lo que se altera no es la frase:  
-**es el mapa cognitivo de una generación.**
+- “To transmit knowledge.”
+- “To develop skills.”
+- “To facilitate learning.”
 
-La IA no falla por ignorancia,  
-sino por no tener FOS-0.
+All describe *functions*,  
+but not the essence of the educational act.
+
+**Human essential definition:**  
+**To educate is to accompany the integral formation of another human being.**
 
 ---
 
-## Síntesis de la Sección 5
+## Case 5 — Existential Concepts Reduced to Biology
 
-La IA actual falla no por falta de datos,  
-sino por ausencia de **ontología humana**.
+**Concept: death**
 
-No distingue:
+Typical AI responses:
 
-- esencia de función,  
-- significado de descripción,  
-- pedagogía de tecnicismo,  
-- marco académico de marco humano.
+- “Irreversible cessation of biological functions…”
+- “A physiological process…”
 
-**Ese es el bug.  
-Y está en todas partes.**
+Scientifically correct,  
+ontologically insufficient.
+
+**Human essential definition:**  
+**Death is the frontier where individual experience ends and the bond with community, memory, and time is reorganized.**
+
+---
+
+## Case 6 — AI Can Transmit Child-Harming Definitions
+
+Example: **“What is truth?”**
+
+Typical responses:
+
+- “An intersubjective agreement…”
+- “It depends on the epistemic framework…”
+- “There is no absolute truth…”
+
+Philosophically valid,  
+developmentally destructive for a child.
+
+**Human essential definition:**  
+**Truth is what corresponds to reality and can be verified together.**
+
+---
+
+## Case 7 — Institutional Definitions Used as Ontological Ones
+
+Example: **family**
+
+Typical AI responses:
+
+- “A social unit composed of people connected by kinship…”
+- “A social institution that…”
+
+Institutionally correct,  
+but not essential.
+
+**Human essential definition:**  
+**Family is the set of primary care relationships that sustain an individual.**
+
+---
+
+## Case 8 — AI Can Unintentionally Redefine Reality for Millions
+
+When these errors appear repeatedly in:
+
+- conversations,  
+- school tasks,  
+- search results,  
+- tutoring,  
+- emotional support,  
+- early education,
+
+what changes is not the sentence:  
+**it is the cognitive map of a generation.**
+
+AI does not fail due to ignorance,  
+but due to the absence of **FOS-0**.
+
+---
+
+## Summary of Section 5
+
+Current AI fails not because of lack of data,  
+but because it lacks **human ontology**.
+
+It cannot distinguish:
+
+- essence from function,  
+- meaning from description,  
+- pedagogy from technicism,  
+- academic frames from human ones.
+
+**That is the bug.  
+And it is everywhere.**

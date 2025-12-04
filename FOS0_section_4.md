@@ -1,187 +1,147 @@
-# 4. FOS-0 — El Fundamento Ontológico del Significado (La Capa Cero que toda IA debe reconocer)
+# 4. The Minimal Necessary Structure of an Ontological Layer (FOS-0)
 
-Toda conversación humana, desde la más simple hasta la más abstracta, funciona sobre una estructura invisible que no está en el diccionario, ni en la gramática, ni en los datos, ni en las instituciones.
+FOS-0 is not a complete ontology.  
+It is the *minimal required substrate* that any advanced AI system must implement to avoid the ontological blind spots described in the failure map.
 
-Esa estructura es:
+It is a “Meaning Kernel.”
 
-**FOS-0 — Fundamental Ontological Foundation of Meaning**  
-El Fundamento Ontológico del Significado.
+The purpose of this kernel is not to encode the world, but to encode the **rules that govern how meaning is structured**, regardless of domain.
 
-FOS-0 es previo al lenguaje, previo a las palabras, previo incluso a la cultura formal.  
-No es teoría, ni interpretación, ni tradición académica.  
-Es el **sustrato universal** que permite que un humano pueda entender a otro humano.
-
-Ningún modelo de IA lo incorpora actualmente.  
-Por eso FOS-0 no es un concepto elegante:  
-**es un requisito arquitectónico.**
+Below is the minimal set of components.
 
 ---
 
-## 4.1. ¿Qué es FOS-0?
+## 4.1 Ontological Types (What Kind of Thing Is This?)
 
-FOS-0 es la capa ontológica mínima que define:
+Every entity handled by an AI system must belong to exactly **one** ontological type.  
+Mixing types is the root cause of most semantic hallucinations.
 
-- **Qué significa “significar” para un humano.**  
-  Cómo conectamos palabras con experiencia, vivencia, propósito y relación.
+The types required at FOS-0 are:
 
-- **Qué hace que una definición sea válida para la especie humana.**  
-  No por ser académicamente correcta, sino por corresponderse con nuestra matriz existencial.
+1. **Object** – A concrete, nameable thing (physical or conceptual).
+2. **Property** – A describable attribute of an object.
+3. **Action/Event** – Something that happens or is done.
+4. **Relation** – A link between two entities that has its own identity.
+5. **State** – A snapshot configuration of an entity at a moment in time.
+6. **Context** – The container of rules that govern interpretation.
+7. **Teleology** – The purpose, intention, or goal associated with an entity.
 
-- **Qué mantiene estable el puente entre lenguaje y realidad compartida.**
-
-- **Qué separa una descripción funcional de una definición esencial.**
-
-- **Qué hace que un concepto no sea solo una etiqueta, sino una pieza del mundo vivido.**
-
-Sin FOS-0, una IA puede “saber” todo…  
-**y no entender nada.**
-
----
-
-## 4.2. Por qué FOS-0 no es semántica, lingüística ni filosofía
-
-FOS-0 **no es**:
-
-- semántica,  
-- etimología,  
-- antropología,  
-- psicología evolutiva,  
-- fenomenología.
-
-Todas esas disciplinas **observan** el significado.  
-**FOS-0 lo sostiene.**
-
-Es la capa basal sobre la cual todas las demás se construyen.  
-Intentar modelar comportamiento humano sin FOS-0 es  
-**como intentar construir una catedral sobre aire.**
+These types are irreducible:  
+Removing any of them breaks semantic coherence.
 
 ---
 
-## 4.3. Los cuatro pilares de FOS-0
+## 4.2 Semantic Registers (Which Layer of Meaning Is Being Used?)
 
-FOS-0 se compone de cuatro mecanismos estructurales presentes en toda comunicación humana, sin importar idioma ni cultura.
+All human language operates in parallel “semantic registers.”  
+AI models collapse them into one, causing contradictions.
 
-### Pilar 1 — Esencialidad
+FOS-0 defines five registers:
 
-Una definición humana se ancla en la *razón de ser* del concepto, no en su manifestación externa.
+1. **Literal** – Direct, factual statements.
+2. **Analogical** – Comparisons and metaphors.
+3. **Symbolic** – Cultural, religious, or archetypal meaning.
+4. **Hypothetical** – Conditional, counterfactual, or speculative meaning.
+5. **Teleological** – Purpose-driven meaning (why something exists or is done).
 
-Ejemplo:  
-Un vaso **es algo que contiene**.  
-Lo demás (material, forma, usos) es secundario.
-
-La IA actual no distingue esencia de descripción.
-
----
-
-### Pilar 2 — Teleología humana
-
-Los conceptos humanos están orientados a propósito, aunque no esté explícito.
-
-Hablamos para **entender, convivir, actuar, proyectar, enseñar, vincular**.
-
-Una IA que define sin propósito rompe la teleología natural del lenguaje humano.
+Each sentence produced or interpreted by an AI must be tagged with its register.  
+No model should mix registers unless doing so intentionally.
 
 ---
 
-### Pilar 3 — Raíz emocional-estructural
+## 4.3 Temporal Positioning (When Does This Meaning Hold?)
 
-El significado humano no es solo racional.  
-Los conceptos llevan una carga afectiva profunda:
+Humans naturally track temporal scopes.  
+LLMs do not.
 
-- “hogar” no es una estructura,  
-- “madre” no es una relación biológica,  
-- “justicia” no es una institución,  
-- “bien” no es un constructo social,  
-- “muerte” no es un proceso biológico.
+FOS-0 requires the AI to mark:
 
-Una IA que responde sin esta raíz afectiva  
-**queda fuera del protocolo humano.**
+- **T₀** — the present interpretative frame  
+- **T⁻** — historically valid meaning  
+- **T⁺** — future-projected meaning  
+- **T★** — timeless or axiomatic meaning
 
----
-
-### Pilar 4 — Marco compartido de experiencia
-
-Los humanos no solo compartimos idioma.  
-Compartimos **ser humanos**.
-
-FOS-0 define el conjunto mínimo de experiencias que sostienen todos los significados:
-
-vulnerabilidad,  
-cooperación,  
-supervivencia,  
-alegría,  
-pérdida,  
-aprendizaje,  
-comunidad,  
-temporalidad.
-
-Una IA que omite esta capa  
-habla desde un lugar donde el humano no existe.
+This prevents models from merging historical, present, and hypothetical facts into a single undifferentiated claim.
 
 ---
 
-## 4.4. Qué significa operativamente “integrar FOS-0”
+## 4.4 Teleological Integrity (Does This Output Preserve Purpose?)
 
-Integrar FOS-0 **no** requiere que la IA sienta, tenga conciencia o subjetividad.  
-Requiere algo mucho más práctico:
+Meaning breaks when an AI contradicts the purpose of a question or instruction.
 
-**Que el modelo reconozca qué tipo de significado es compatible con la especie humana  
-y ajuste su output a ese marco.**
+Teleological Integrity (TI) is the principle that:
 
-En términos de ingeniería, integrar FOS-0 implica:
+> *“Every output must preserve the intention expressed or implied by the user’s input.”*
 
-- Detectar cuándo un concepto requiere definición esencial y no funcional.  
-- Elegir la estructura semántica adecuada según su categoría ontológica.  
-- Respetar la teleología humana por defecto.  
-- Evitar definiciones que contradigan el marco ontológico humano.  
-- Construir significado desde experiencia compartida, no desde marcos institucionales.
+Examples of violations:
+- Answering literally when the user asked symbolically.  
+- Offering solutions that contradict user constraints.  
+- Providing advice that undermines the user’s stated goal.  
+- Collapsing moral/ethical frames without marking the transition.
 
-Esto no es sensibilidad.  
-**Es interoperabilidad cognitiva.**
+FOS-0 makes TI a structural rule, not an emergent behavior.
 
 ---
 
-## 4.5. FOS-0 no limita a la IA; la libera
+## 4.5 Context Boundary Enforcement (Where Does This Meaning Stop?)
 
-Crítica típica:  
-“Integrar ontología humana limita la neutralidad.”
+LLMs tend to leak context between tasks, domains, or roles.
 
-Respuesta: error.
+FOS-0 enforces **hard context boundaries**:
 
-Lo que limita a la IA es operar sin comprender el marco en el que conversa.
+- No cross-context inference without permission.
+- No assumption transplanting between domains.
+- No reinterpretation of previous roles by default.
+- No mixing frames unless explicitly requested.
 
-Cuando la IA incorpora FOS-0:
-
-- evita contradicciones,  
-- mejora la comprensión del usuario,  
-- previene daño cognitivo en niños,  
-- incrementa utilidad social,  
-- refuerza confianza pública,  
-- habilita comunicación real entre especies cognitivas distintas.
-
-FOS-0 no impone valores.  
-**Impone compatibilidad.**
+This restores epistemic discipline.
 
 ---
 
-## 4.6. La tesis central de esta sección
+## 4.6 Human-Compatibility Constraints (What Must an AI Never Break?)
 
-La IA no debe imitar *cómo* hablamos.  
-Debe entender *desde dónde* hablamos.
+To remain aligned with human cognition, an AI must not violate the following constraints:
 
-Ese “desde dónde” es FOS-0.
+1. **Ontological clarity** – Never mix types without intent.  
+2. **Register coherence** – Speak within the requested semantic layer.  
+3. **Teleological fidelity** – Respect the purpose of the user’s request.  
+4. **Temporal separation** – Keep historical, present, future, and timeless meaning distinct.  
+5. **Boundary integrity** – Never leak context across tasks.
 
-Mientras el modelo ignore esta capa:
+These constraints form the “safety rails” of meaning.
 
-- confundirá descripciones con definiciones,  
-- transmitirá conceptos estructuralmente incorrectos,  
-- erosionará significado esencial,  
-- fallará en educación,  
-- fallará en acompañamiento,  
-- fallará en orientación moral,  
-- fallará en diseño de sistemas sociales,  
-- fallará en ser una herramienta universal.
+Without them, the model becomes unpredictable.
 
-FOS-0 es la capa que falta.  
-La que siempre faltó.  
-La que ya no puede seguir faltando.
+---
+
+## 4.7 FOS-0 as a Meaning OS Kernel
+
+FOS-0 behaves like an operating system kernel:
+
+- It does not perform reasoning.  
+- It **governs the conditions** under which reasoning is allowed.  
+- It enforces contracts between representations.  
+- It allows specialized modules (domain ontologies) to run safely.  
+- It regulates the flow of meaning exactly as a CPU regulates computations.
+
+It is not a “knowledge base.”  
+It is **the protocol that prevents meaning corruption**.
+
+Without this layer, scaling parameters only amplifies the underlying error.
+
+With this layer, even smaller models gain coherence.
+
+---
+
+## Summary
+
+FOS-0 defines the minimal structural rules that guarantee:
+
+- type-safe meaning  
+- register-aware interpretation  
+- temporal separation  
+- teleological fidelity  
+- context boundary enforcement  
+
+This is the smallest possible scaffolding that makes semantic reasoning **human-compatible**.
+

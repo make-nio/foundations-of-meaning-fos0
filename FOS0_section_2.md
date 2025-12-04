@@ -1,140 +1,140 @@
-# 2. Naturaleza del bug: precisión sintáctica, falla de origen
+# 2. Nature of the Bug: Syntactic Precision, Ontological Failure
 
-El error expuesto en la introducción no surge del contenido que procesa la IA, sino de *cómo interpreta el acto de responder*.  
-Los modelos actuales operan sobre un principio estadístico simple:  
-**predecir la siguiente palabra más plausible dada la secuencia anterior**.
+The error described in the introduction does not arise from the *content* processed by the AI, but from *how it interprets the act of responding*.  
+Current models operate on a simple statistical principle:  
+**predict the most plausible next word given the previous sequence**.
 
-Ese mecanismo funciona impecablemente para:
+This mechanism works flawlessly for:
 
-- generar texto formal,  
-- seguir estilos,  
-- completar patrones,  
-- responder consultas factuales,  
-- corregir código,  
-- producir resúmenes.
+- generating formal text,  
+- following styles,  
+- completing patterns,  
+- answering factual queries,  
+- correcting code,  
+- producing summaries.
 
-Pero falla cuando el usuario necesita algo más elemental que todo lo anterior:
+But it fails when the user needs something more fundamental than all of the above:
 
-**una respuesta que preserve la estructura existencial del concepto nombrado.**
+**a response that preserves the existential structure of the concept being named.**
 
-En su forma más pura, el bug se resume así:
+In its purest form, the bug can be summarized as:
 
-**La IA acierta la frase y falla el sentido.**
-
----
-
-## 2.1. ¿Cómo se detecta este bug?
-
-La detección no proviene de errores medibles, sino de un patrón observable:
-
-**La IA responde sin aplicar el tipo de significado que el concepto exige.**
-
-Ejemplos típicos:
-
-- Toma definiciones que deberían situarse en experiencia humana  
-  y las traslada a un registro institucional.
-
-- Toma conceptos cuyo núcleo es relacional  
-  y los reduce a funciones individuales.
-
-- Toma nociones cuyo eje es vivencial  
-  y las reemplaza por descripciones mecanicistas.
-
-- Toma categorías cuyo propósito es esencial  
-  y las reformula como objetos sin finalidad.
-
-La frase es correcta.  
-El sentido no corresponde.  
-**Ahí está el bug.**
+**The AI gets the sentence right and the meaning wrong.**
 
 ---
 
-## 2.2. Por qué este error no aparece en benchmarks
+## 2.1. How this bug is detected
 
-Los tests actuales evalúan:
+The detection does not come from measurable errors, but from an observable pattern:
 
-- coherencia,  
-- precisión factual,  
-- completitud,  
-- razonamiento,  
-- ausencia de contradicciones,  
-- alineamiento con normas,  
-- comportamiento seguro.
+**The AI responds without applying the type of meaning the concept requires.**
 
-**Ninguna de estas métricas mide si la respuesta preserva la ontología humana del concepto solicitado.**
+Typical examples:
 
-Un modelo puede obtener 90/100 en todo  
-y aun así comunicar de forma incompatible con el usuario.
+- Takes definitions that should be grounded in human experience  
+  and shifts them into an institutional register.
 
-Paradójicamente, cuanto más grande es el modelo,  
-más *convincente* se vuelve la expresión del error.
+- Takes concepts whose core is relational  
+  and reduces them to individual functions.
 
-Por eso el bug es **invisible a las métricas**  
-y **evidente para cualquier humano** que escucha una definición desplazada.
+- Takes notions whose axis is experiential  
+  and replaces them with mechanistic descriptions.
 
----
+- Takes categories whose purpose is essential  
+  and reformulates them as objects without teleology.
 
-## 2.3. Dónde se origina la falla
-
-El origen no está en los datos; está en la arquitectura:
-
-**El modelo no diferencia entre tipos ontológicos de conceptos.**  
-Trata todo como:
-
-- patrones de texto,  
-- correlaciones,  
-- registros equivalentes.
-
-Pero los conceptos humanos **no** son equivalentes entre sí.  
-Cada uno requiere un marco distinto para ser definido.
-
-Una IA que no distinga entre:
-
-- lo esencial,  
-- lo experiencial,  
-- lo instrumental,  
-- lo institucional,  
-- lo teleológico,
-
-inevitablemente mezclará categorías y producirá definiciones que **suenan bien** pero **no representan** lo que el humano realmente preguntó.
+The sentence is correct.  
+The meaning is not.  
+**That is the bug.**
 
 ---
 
-## 2.4. Manifestación operativa del bug
+## 2.2. Why this error does not appear in benchmarks
 
-### Síntoma 1 — Definiciones desplazadas
-El modelo responde desde un marco de segundo o tercer orden  
-cuando el usuario preguntó por la base.
+Current tests evaluate:
 
-### Síntoma 2 — Descripción en lugar de definición
-Confunde *cómo funciona* algo  
-con *qué es* ese algo.
+- coherence,  
+- factual accuracy,  
+- completeness,  
+- reasoning,  
+- lack of contradictions,  
+- alignment with norms,  
+- safety behavior.
 
-### Síntoma 3 — Neutralidad mal aplicada
-El modelo interpreta que preservar la ontología humana  
-equivale a tomar partido.  
-En su intento de ser “neutral”,  
-elimina justo el aspecto que daba significado al concepto.
+**None of these metrics measure whether the response preserves the human ontology of the concept at hand.**
 
----
+A model may score 90/100 on everything  
+and still communicate in a way that is incompatible with the user’s conceptual structure.
 
-## 2.5. Precisión superficial, error profundo
+Paradoxically, the larger the model,  
+the more *convincing* the expression of the error becomes.
 
-La dualidad del bug es lo más llamativo:
-
-- **La IA parece correcta**, porque la frase es válida.  
-- **La IA está equivocada**, porque el significado es incompatible con el humano.
-
-Ambos niveles pueden coexistir,  
-evidenciando que no se trata de un problema de entrenamiento,  
-sino de **una falla de modelo**.
+Thus the bug is **invisible to metrics**  
+and **obvious to any human** who hears a displaced definition.
 
 ---
 
-## 2.6. Síntesis de la sección
+## 2.3. Where the failure originates
 
-**La IA actual genera lenguaje sin distinguir qué tipo de realidad representa ese lenguaje para un humano.**
+The origin is not in the data; it is in the architecture:
 
-Por eso falla.  
-Por eso confunde.  
-Por eso necesita **FOS-0**.
+**The model does not differentiate between ontological types of concepts.**  
+It treats everything as:
+
+- text patterns,  
+- correlations,  
+- equivalent registers.
+
+But human concepts are **not** equivalent to one another.  
+Each requires a different frame to be defined properly.
+
+An AI that does not distinguish between:
+
+- the essential,  
+- the experiential,  
+- the instrumental,  
+- the institutional,  
+- the teleological,
+
+will inevitably mix categories and produce definitions that **sound correct** but **do not represent** what the human actually asked.
+
+---
+
+## 2.4. Operational manifestations of the bug
+
+### Symptom 1 — Displaced definitions
+The model responds from a second- or third-order frame  
+when the user asked for the base layer.
+
+### Symptom 2 — Description instead of definition
+It confuses *how something works*  
+with *what something is*.
+
+### Symptom 3 — Misapplied neutrality
+The model interprets preserving human ontology  
+as “taking a stance.”  
+In trying to appear neutral,  
+it removes precisely the aspect that gives the concept its meaning.
+
+---
+
+## 2.5. Superficial precision, deep error
+
+The duality of the bug is striking:
+
+- **The AI appears correct**, because the sentence is valid.  
+- **The AI is wrong**, because the meaning is incompatible with the human frame.
+
+Both levels can coexist,  
+showing that this is not a training issue,  
+but **a model-level failure**.
+
+---
+
+## 2.6. Section Summary
+
+**Current AI generates language without distinguishing what type of reality that language represents for a human.**
+
+That is why it fails.  
+That is why it confuses.  
+That is why it needs **FOS-0**.

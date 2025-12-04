@@ -1,33 +1,35 @@
-# 1. Introducción
+# SECTION 1 — Introduction
 
-Durante años interactué con modelos de lenguaje a diario —no como observador externo, sino como usuario intensivo que los somete a contextos reales: técnicos, creativos, filosóficos y personales. Ese uso prolongado revela patrones que no aparecen ni en laboratorios ni en benchmarks. Uno de esos patrones, silencioso pero recurrente, es el que motiva este documento.
+For years, I have interacted with language models daily — not as an outside observer, but as an intensive user exposing them to real contexts: technical, creative, philosophical, and personal. This long-term exposure reveals patterns that never appear in benchmarks, labs, or synthetic evaluations.
 
-No se trata de un error funcional, ni de un sesgo, ni de una alucinación.  
-Es algo más profundo:  
-**un fallo en la estructura misma del significado desde la cual la IA interpreta el lenguaje humano.**
+One of those patterns, silent but persistent, is the reason this document exists.
 
-Este informe surge desde la perspectiva del “tester humano avanzado”, alguien que ha visto evolucionar modelos, arquitecturas, estilos, restricciones y marcos de seguridad, pero que identifica un problema común a todos ellos:
+This is not a functional error, nor a bias, nor a hallucination.  
+It is something deeper:
 
-**La IA responde correctamente dentro de su arquitectura,  
-pero fuera del fundamento desde el cual los humanos construimos significado.**
+**a failure in the very structure through which AI produces and interprets meaning.**
 
-Ese desajuste ontológico no suele producir fallas visibles en la superficie; sin embargo, afecta:
+This report emerges from the standpoint of an “advanced human tester,” someone who has witnessed the evolution of models, architectures, stylistic shifts, guardrails, and safety layers — and yet sees the same underlying issue across all generations:
 
-- cómo el modelo define conceptos esenciales,  
-- cómo dialoga con usuarios sin formación previa,  
-- y cómo mantiene coherencia con la forma en que los humanos entienden el mundo.
+**AI responds correctly within its own architecture,  
+but outside the foundational layer from which humans construct meaning.**
 
-A ese fundamento humano previo al lenguaje —la capa basal que sostiene todo significado posible— lo llamamos:
+This ontological mismatch rarely generates visible errors, but it affects:
+
+- how models define essential concepts,
+- how they respond to users without formal background,
+- and how they maintain coherence with human cognition.
+
+We call the pre-linguistic human foundation — the layer that supports all meaning:
 
 **FOS-0 — Fundamental Ontological Substrate of Meaning (Layer Zero).**
 
-El propósito de este paper es:
+The purpose of this paper is to:
 
-- Describir qué es FOS-0 desde una perspectiva operativa y aplicable.  
-- Identificar cómo y dónde fallan los modelos actuales al ignorarlo.  
-- Proponer principios mínimos para incorporar **compatibilidad ontológica** en modelos futuros.
+- Explain what FOS-0 is from an *operationally implementable* standpoint.  
+- Identify where current models fail by ignoring it.  
+- Provide minimal principles to incorporate **ontological compatibility** into future systems.
 
-Este documento no es una teoría filosófica ni un manifiesto moral.  
-Es un **informe técnico-ontológico**, dirigido a ingenieros y diseñadores de modelos de lenguaje, cuyo objetivo es señalar un bug que solo se vuelve evidente cuando se conversa con IA *a escala humana y durante largo tiempo*.
+This document is not a philosophical treatise nor a moral manifesto.  
+It is a **technical-ontological report**, aimed at engineers and model designers who must understand a bug that only becomes visible when interacting with AI *at human-scale and in extended real use*.
 
----

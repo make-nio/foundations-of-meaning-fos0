@@ -11,86 +11,87 @@
   <img src="https://img.shields.io/github/forks/make-nio/foundations-of-meaning-fos0?style=social" />
 </p>
 
+# 📘 FOS-0 — Ontological Foundation of Meaning  
+### A technical proposal to fix the ontological bug in language models
 
-# 📘 FOS-0 — Fundamento Ontológico del Significado  
-### Propuesta técnica para corregir el bug ontológico de los modelos de lenguaje
+This repository contains the complete paper defining, demonstrating, and implementing **FOS-0**,  
+the minimal ontological layer required for any AI system to produce meaning compatible with human cognition.
 
-Este repositorio contiene el paper completo que define, demuestra e implementa **FOS-0**,  
-la capa ontológica mínima que toda IA necesita para producir significado compatible con la cognición humana.
-
-El paper está organizado en secciones independientes (1–9), cada una alojada en un `.md` propio, con enlaces directos desde este índice.
+The paper is organized into independent sections (1–9), each stored in its own `.md` file, with direct links from this index.
 
 ---
 
-## 📑 Índice General del Paper
+## 📑 General Index of the Paper
 
-### **1. Introducción**  
+### **1. Introduction**  
 👉 [FOS0_section_1.md](./FOS0_section_1.md)
 
-### **2. Naturaleza del Bug Ontológico**  
+### **2. Nature of the Ontological Bug**  
 👉 [FOS0_section_2.md](./FOS0_section_2.md)
 
-### **3. Riesgo Sistémico del Error Ontológico**  
+### **3. Systemic Risk of the Ontological Error**  
 👉 [FOS0_section_3.md](./FOS0_section_3.md)
 
-### **4. FOS-0 — El Fundamento Ontológico del Significado**  
+### **4. FOS-0 — The Ontological Foundation of Meaning**  
 👉 [FOS0_section_4.md](./FOS0_section_4.md)
 
-### **5. Casos Concretos de Falla**  
+### **5. Concrete Failure Cases**  
 👉 [FOS0_section_5.md](./FOS0_section_5.md)
 
-### **6. Consecuencias Operativas en Modelos Actuales**  
+### **6. Operational Consequences in Current Models**  
 👉 [FOS0_section_6.md](./FOS0_section_6.md)
 
-### **7. Diferencia Operativa Entre Modelos con y sin FOS-0**  
+### **7. Operational Difference Between Models With and Without FOS-0**  
 👉 [FOS0_section_7.md](./FOS0_section_7.md)
 
-### **8. Arquitectura Unificada para Integrar FOS-0 (FCL Layer)**  
+### **8. Unified Architecture to Integrate FOS-0 (FCL Layer)**  
 👉 [FOS0_section_8.md](./FOS0_section_8.md)
 
-### **9. Conclusión y Apéndices**  
+### **9. Conclusion and Appendices**  
 👉 [FOS0_section_9.md](./FOS0_section_9.md)
 
 ---
 
-## 🧩 Resumen Ejecutivo
+## 🧩 Executive Summary
 
-Los modelos de lenguaje actuales fallan no por falta de datos o parámetros, sino por **carecer de una distinción entre tipos de significado**.  
-FOS-0 introduce la **Capa Cero del Significado**, una estructura operativa que:
+Modern language models fail not due to lack of data or parameters, but because they **do not distinguish between types of meaning**.  
+FOS-0 introduces the **Zero Layer of Meaning**, an operational structure that:
 
-- clasifica el concepto antes de responder,  
-- elige el registro semántico adecuado,  
-- preserva teleología humana cuando corresponde,  
-- corrige reduccionismos y desplazamientos ontológicos,  
-- filtra deformaciones cognitivas que pueden dañar estructuras formativas.
+- classifies the concept before answering,  
+- selects the correct semantic register,  
+- preserves human teleology when appropriate,  
+- corrects ontological reductions and displacements,  
+- filters cognitive distortions that can harm formative structures.
 
-El resultado es una IA que **interopera ontológicamente con humanos**,  
-no solo estadísticamente.
-
----
-
-## 🔧 Contenido del Repositorio
-
-- `FOS0_section_1.md` — Introducción  
-- `FOS0_section_2.md` — Naturaleza del bug  
-- `FOS0_section_3.md` — Riesgo sistémico  
-- `FOS0_section_4.md` — Definición operativa de FOS-0  
-- `FOS0_section_5.md` — Casos concretos de falla  
-- `FOS0_section_6.md` — Consecuencias operativas  
-- `FOS0_section_7.md` — Comparativa sin vs. con FOS-0  
-- `FOS0_section_8.md` — Arquitectura FCL y roadmap integrado  
-- `FOS0_section_9.md` — Conclusión + Apéndices técnicos
+The result is an AI that **interoperates cognitively with humans**,  
+not only statistically.
 
 ---
 
-## 📝 Licencia y Uso
-Este trabajo puede distribuirse libremente con atribución.  
-Su objetivo es contribuir al diseño de IA compatibles con significado humano.
+## 🔧 Repository Contents
+
+- `FOS0_section_1.md` — Introduction  
+- `FOS0_section_2.md` — Nature of the bug  
+- `FOS0_section_3.md` — Systemic risk  
+- `FOS0_section_4.md` — Operational definition of FOS-0  
+- `FOS0_section_5.md` — Concrete failure cases  
+- `FOS0_section_6.md` — Operational consequences  
+- `FOS0_section_7.md` — Comparison: without vs. with FOS-0  
+- `FOS0_section_8.md` — FCL architecture + integrated roadmap  
+- `FOS0_section_9.md` — Conclusion + technical appendices
 
 ---
 
-## 🌐 Autor
-Este documento es el resultado de investigación conversacional intensiva entre  
-**Mariano (usuario)** y **ChatGPT (IA)**, explorando la ontología del lenguaje y la ingeniería cognitiva.
+## 📝 License & Usage
+
+This work may be freely distributed with attribution.  
+Its goal is to contribute to the design of AI systems compatible with human meaning.
+
+---
+
+## 🌐 Author
+
+This document is the result of intensive conversational research between  
+**Mariano (user)** and **ChatGPT (AI)**, exploring language ontology and cognitive engineering.
 
 ---
